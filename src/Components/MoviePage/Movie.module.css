@@ -1,0 +1,9 @@
+.frame {
+    display: block;
+    margin: 10px 15px;
+}
+
+.movieInput {
+    margin: 10px;
+    height: 24px;
+}

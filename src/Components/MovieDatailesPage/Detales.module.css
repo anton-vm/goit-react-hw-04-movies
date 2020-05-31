@@ -1,0 +1,26 @@
+.frame {
+    display: block;
+    margin: 10px 15px;
+    border-bottom: 1px solid grey;
+}
+
+.movieBtn {
+    margin: 10px;
+    display: block;
+    width: 80px;
+}
+
+.movieFrame {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.movieImg {
+    width: 250px;
+    margin: 0 20px;
+}
+
+.movieGenres {
+    display: flex;
+}
