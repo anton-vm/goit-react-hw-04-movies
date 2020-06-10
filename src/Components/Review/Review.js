@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {getReviews} from '../../helpers/index'
+import {getReviews} from '../../api/index'
 
 
 

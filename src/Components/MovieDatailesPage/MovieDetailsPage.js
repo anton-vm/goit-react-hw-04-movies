@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
-import { getMovieDetales, posterUrl } from "../../helpers/index";
+import { getMovieDetales, posterUrl } from "../../api/index";
 import {Link, Switch, Route, useLocation, useHistory} from 'react-router-dom'
 import Cast from "../Cast/Cast"
 import style from './Detales.module.css'
@@ -64,10 +64,10 @@ const MovieDetailsPage = (props) => {
       <section>
           <h3>Additional information</h3>
           <ul>
-      <Link to= {{pathname: `/movies/${movieId}/cast`, state: {from: location}}}>
+      <Link to= {{pathname: `/movies/${movieId}/cast`, state: {from: location.state.from}}}>
           <li>Cast</li>
       </Link>
-      <Link to={{pathname: `/movies/${movieId}/review`, state: {from: location}}}><li>Review</li></Link>
+      <Link to={{pathname: `/movies/${movieId}/review`, state: {from: location.state.from}}}><li>Review</li></Link>
       </ul>
       {/* <Suspense fallback={<p>...Loading</p>}> */}
           <Switch>

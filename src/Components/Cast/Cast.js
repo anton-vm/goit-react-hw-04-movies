@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {getCredits, profileUrl} from '../../helpers/index'
+import {getCredits, profileUrl} from '../../api/index'
 
 const Cast = (props) => {
 

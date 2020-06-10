@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
-import { searchMovie } from "../../helpers/index";
+import { searchMovie } from "../../api/index";
 import queryString from "query-string";
 import { useLocation, useHistory, Link, Switch, Route } from "react-router-dom";
 import style from './Movie.module.css'
